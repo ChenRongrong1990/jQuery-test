@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				var txt="";
+				txt += "Width of div: " + $("#div1").width() + "</br>";
+				txt += "Height of div: " + $("#div1").height();
+				$("#div1").html(txt);
+			})
+		})
+	</script>
+</head>
+<body>
+<div id="div1" style="height:100px;width:300px;padding: 10px;margin: 3px;border: 1px solid blue;background-color: lightblue;"></div>
+<br>
+<button>display div width and height</button>
+<p>width() -- return</p>
+<p>height() -- return</p>
+</body>
+</html>
