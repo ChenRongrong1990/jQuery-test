@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery.js"></script>
+	<script type="text/javascript">
+		$.noConflict();
+		jQuery(document).ready(function(){
+			jQuery("button").click(function(){
+				jQuery("p").text("Jquery is running!");
+				//jQuery("p").html("<b>Jquery is running !</b>");
+			})
+		})
+	</script>
+</head>
+<body>
+	<p>This is a paragraph!</p>
+	<button>test jquery</button>
+</body>
+</html>
