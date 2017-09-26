@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#button1").click(function(){
+			alert("Value: " + $("#test").val());
+		});
+		$("#button2").click(function(){
+			alert("Value: " + $("p").html());
+		});
+	});
+</script>
+</head>
+
+<body>
+	<p>Name:<input type="text" id="test" value="Mouse">It is good!</p>
+	<button id="button1">Value</button>
+	<button id="button2">Html</button>
+</body>
+</html>

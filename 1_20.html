@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("div").first().css("background-color","yellow");
+			$("p").first().css("background-color","red");
+			$("div").last().css("background-color","yellow");
+			$("p").eq(3).css("background-color","blue");
+			$("p").filter(".pp").css("background-color","yellow");
+			$("p").not(".pp").css("background-color","white");
+		})
+	</script>
+</head>
+<body>
+	<h1>Welcom to my main page</h1>
+	<div>This is ppp
+		<p>p->This is a paragraph of div</p>
+	</div>
+	<div>
+		<p>p->This is another paragraph of div</p>
+	</div>
+	<p class="pp">p->This is also paragraph</p>
+	<p class="pp">p->This is aaa</p>
+</body>
+</html>

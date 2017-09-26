@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("h1,h2,p").removeClass("blue");
+				$("div").removeClass("important");
+				$("h1,h2,p").toggleClass("blue");
+			})
+		})
+	</script>
+
+	<style type="text/css">
+		.important
+		{
+			font-weight: bold;
+			font-size: xx-large;
+		}
+
+		.blue
+		{
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="blue">The head one</h1>
+	<h2 class="blue">The head two</h2>
+	<p class="blue">This is a paragraph!</p>
+	<p>This is another paragraph!</p>
+	<div class="important">This is very important text!</div>
+	<br>
+	<button>Insert class into Element</button>
+</body>
+</html>

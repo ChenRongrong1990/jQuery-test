@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.siblings *
+		{
+			display: block;
+			border: 2px solid lightgrey;
+			color: lightgrey;
+			padding: 5px;
+			margin: 15px;
+		}
+	</style>
+	<script src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("h2").siblings().css({"color":"red","border":"2px solid red"});
+			$("h2").siblings("p").css({"color":"blue","border":"2px solid blue"});
+			$("h2").next().css({"color":"black","border":"2px solid black"});
+			$("h2").nextAll().css({"color":"black","border":"2px solid black"});
+			$("h2").nextUntil("h5").css({"color":"black","border":"2px solid black"});
+		    $("h2").prev().css({"color":"black","border":"2px solid black"});
+		    $("h2").prevAll().css({"color":"black","border":"2px solid black"});
+		    $("h2").prevUntil("h1").css({"color":"black","border":"2px solid black"});
+		})
+	</script>
+</head>
+<body class="siblings">
+	<div>div parent
+		<h1>h1</h1>
+		<p>ppp</p>
+		<span>span-span</span>
+		<h2>h2</h2>
+		<h3>h3</h3>
+		<p>ppp</p>
+		<h4>h4</h4>
+		<h5>h5</h5>
+		
+	</div>
+
+</body>
+</html>

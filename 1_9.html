@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("img").before("<b>Before</b>");
+  });
+
+  $("#btn2").click(function(){
+    $("img").after("<i>After</i>");
+  });
+});
+</script>
+</head>
+
+<body>
+<b>Before</b>
+<img src="eg_w3school.gif" alt="W3School Logo" />
+<i>After</i>
+<br><br>
+<button id="btn1">insert text before img</button>
+<button id="btn2">insert text after img</button>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.ancestors *
+		{
+			display: block;
+			border: 2px solid lightgrey;
+			color: lightgrey;
+			padding: 5px;
+			margin: 15px;
+		}
+	</style>
+
+	<script src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("li").parent().css({"color":"blue","border":"2px  solid blue"});
+			$("span").parents().css({"color":"red","border":"2px  solid red"});
+			$("span").parents("ul").css({"color":"blue","border":"2px  solid blue"});
+			$("span").parentsUntil("div").css({"color":"yellow","border":"2px  solid yellow"});
+		})
+	</script>
+</head>
+<body>
+	<div class="ancestors">No 1
+		<div style="width: 500px;">
+			div graden graden father
+			<ul>ul graden father
+				<li>li father
+					<span>span</span>
+				</li>
+			</ul>
+		</div>		
+
+		<div style="width: 500px;">
+			div graden father
+			<p>p parent
+				<span>span</span>
+			</p>
+		</div>
+	</div>
+</body>
+</html>
